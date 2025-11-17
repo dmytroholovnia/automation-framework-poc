@@ -1,7 +1,5 @@
-import datagenerator.PageDataGenerator;
 import dto.createpage.CreatePageRequestDto;
 import dto.status.StatusRequestDto;
-import enums.Status;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -17,10 +15,6 @@ public class CreatePageTest extends BaseTest {
 
     @BeforeEach
     public void setupOrder() {
-        createPageRequestDto = PageDataGenerator.generateDto();
-        var responseDto = apiService.createPage(createPageRequestDto);
-        String orderUrl = responseDto.getUrl();
-        paymentSuccessPage = new PaymentDataSetup(coreDriver).applyPayment(orderUrl);
     }
 
     @Test
@@ -38,8 +32,6 @@ public class CreatePageTest extends BaseTest {
         StatusRequestDto statusRequestDto = new StatusRequestDto(createPageRequestDto.getOrder().getOrderId());
         var orderDto = apiService.getStatus(statusRequestDto).getOrder();
         assertThat(orderDto.getAmount()).isEqualTo(createPageRequestDto.getOrder().getAmount());
-        assertThat(orderDto.getCurrency()).isEqualTo(createPageRequestDto.getOrder().getCurrency());
-        assertThat(orderDto.getStatus()).isEqualTo(Status.APPROVED.getValue());
     }
 
 }

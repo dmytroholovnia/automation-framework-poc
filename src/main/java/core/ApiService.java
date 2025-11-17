@@ -47,15 +47,9 @@ public class ApiService {
     }
 
     public RequestSpecification getSpecification(Object object) {
-        var payload = JsonUtils.toJson(object);
-        var generatedSignature = SignatureGenerator
-                .generateSignature(PUBLIC_API_KEY, payload, SECRET_API_KEY);
-
         return RestAssured
                 .given()
                 .baseUri(BASE_URI)
-                .header(new Header("merchant", PUBLIC_API_KEY))
-                .header(new Header("signature", generatedSignature))
                 .contentType(ContentType.JSON)
                 .body(JsonUtils.toJson(object));
     }
