@@ -3,7 +3,7 @@ package steps.ui;
 import core.CoreDriver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
-import ui.MainPage;
+import ui.pages.MainPage;
 
 public class MainPageSteps {
 

@@ -3,7 +3,7 @@ package steps.ui;
 import core.CoreDriver;
 import io.cucumber.java.en.And;
 import org.assertj.core.api.Assertions;
-import ui.MainPage;
+import ui.pages.MainPage;
 
 public class CommonSteps {
 

@@ -1,6 +1,5 @@
 package hooks;
 
-import core.ApiService;
 import core.CoreDriver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;

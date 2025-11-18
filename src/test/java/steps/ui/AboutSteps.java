@@ -4,7 +4,7 @@ import core.CoreDriver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.assertj.core.api.Assertions;
-import ui.AboutPage;
+import ui.pages.AboutPage;
 
 public class AboutSteps {
 
