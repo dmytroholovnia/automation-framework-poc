@@ -10,13 +10,13 @@ public class BaseTest {
 
     @BeforeEach
     public void setup() {
-        apiService = new ApiService();
-        coreDriver = new CoreDriver();
+//        apiService = new ApiService();
+//        coreDriver = new CoreDriver();
     }
 
     @AfterEach
     public void tearDown() {
-        coreDriver.tearDown();
+//        coreDriver.tearDown();
     }
 
 }
