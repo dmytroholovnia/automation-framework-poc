@@ -128,12 +128,20 @@
             <artifactId>cucumber-java</artifactId>
             <version>7.14.0</version>
         </dependency>
+
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit-platform-engine</artifactId>
             <version>7.14.0</version>
             <scope>test</scope>
         </dependency>
+
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/io.cucumber/cucumber-picocontainer &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>io.cucumber</groupId>-->
+<!--            <artifactId>cucumber-picocontainer</artifactId>-->
+<!--            <version>7.14.0</version>-->
+<!--        </dependency>-->
 
         <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
         <dependency>

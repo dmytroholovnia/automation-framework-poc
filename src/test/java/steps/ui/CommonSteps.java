@@ -1,4 +1,4 @@
-package steps;
+package steps.ui;
 
 import core.CoreDriver;
 import io.cucumber.java.en.And;

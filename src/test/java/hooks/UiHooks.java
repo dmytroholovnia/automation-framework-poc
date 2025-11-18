@@ -5,17 +5,14 @@ import core.CoreDriver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 
-public class Hooks {
+public class UiHooks {
 
-    protected ApiService apiService;
-
-    @Before
+    @Before("@ui")
     public void setup() {
-        apiService = new ApiService();
         CoreDriver.getDriver();
     }
 
-    @After
+    @After("@ui")
     public void tearDown() {
         CoreDriver.quitDriver();
     }

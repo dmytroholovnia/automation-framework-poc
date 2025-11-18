@@ -1,3 +1,4 @@
+@ui
 Feature: Rick and Morty API Website Navigation
 
   Scenario: Explore the About page
