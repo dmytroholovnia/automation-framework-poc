@@ -26,6 +26,20 @@ It supports **UI testing**, **API testing**, **BDD workflows**, and provides an 
 - Easy integration into CI/CD pipelines
 
 ---
+### Setup
+
+#### Prerequisites:
+- Java Development Kit (JDK) 17 or higher 
+- Apache Maven 3.6+
+
+#### Clone the repo:
+```bash
+git clone https://github.com/dmytroholovnia/automation-framework-poc.git
+cd automation-framowork-poc
+```
+- install plugin - cucumber
+- install plugin - lombok
+---
 
 ### ▶️ Running Tests
 
@@ -36,7 +50,10 @@ Use Maven to execute the test suites:
 mvn clean test
 ```
 
+### Reporting
 
-**Run UI tests:**
+After execution, comprehensive reports can be found in the project's target directory:
+Cucumber HTML Report: 
 ```bash
-mvn clean test -Dcucumber.filter.tags="@ui"
+target/cucumber-report.html
+```
