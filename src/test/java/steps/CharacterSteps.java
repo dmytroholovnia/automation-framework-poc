@@ -18,15 +18,6 @@ public class CharacterSteps {
         this.service = new CharacterApiService();
     }
 
-//    @When("I send GET request to my url {string}")
-//    public void iSendGETRequestToHttpsRickandmortyapiComApiCharacterName(String name) {
-//        this.characterResponse = service.getAllCharacters(name);
-//    }
-//    @When("I send GET request to character/ by name {string}")
-//    public void iSendGETRequestToHttpsRickandmortyapiComApiCharacterName(String name) {
-//        this.characterResponse = service.getAllCharacters(name);
-//    }
-
     @Then("response status should be {int}")
     public void responseStatusShouldBe(int statusCode) {
         characterResponse.then()
