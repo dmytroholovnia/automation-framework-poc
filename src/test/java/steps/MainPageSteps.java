@@ -20,9 +20,9 @@ public class MainPageSteps {
 
     @When("I click on the About link")
     public void iClickOnTheAboutLink() {
-        mainPage.getAboutButton().click();
+        mainPage.getHeader().getAboutButton().click();
         mainPage.getWaiter()
-                .waitForAttribute(mainPage.getAboutButton(), "aria-current", "page");
+                .waitForAttribute(mainPage.getHeader().getAboutButton(), "aria-current", "page");
     }
 
 }
